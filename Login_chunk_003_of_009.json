@@ -1,0 +1,393 @@
+{
+  "scenario": "buzzreports1",
+  "group": "Login",
+  "source_file": "C:\\Users\\VVASUBA\\PycharmProjects\\PythonProject\\json(.saz)_Files\\grouped\\buzzreports1\\Login.json",
+  "statistics": {
+    "total_sessions": 126,
+    "actionable_requests": 83,
+    "skipped_connect": 20,
+    "skipped_options": 23,
+    "skipped_no_url": 0
+  },
+  "jmeter_hints": {
+    "unique_servers": [
+      "https://api.zebra.connexus.com:443",
+      "https://test-smoketest.zebra-next.connexus.com:443",
+      "https://testcurrent.connexus.com:443",
+      "https://testpcx-buzzotherreports-ui.v3test.connexus.com:443",
+      "https://testpcx-cdn-common.v3test.connexus.com:443",
+      "https://testpcx-cdn-uistyleguide.v3test.connexus.com:443",
+      "https://testpcx-cdn-webmail.v3test.connexus.com:443",
+      "https://testpcx-webmailservice.v3test.connexus.com:443"
+    ],
+    "http_request_defaults": {
+      "note": "8 different servers – set per-sampler or use variables"
+    },
+    "header_keys_used": [
+      "Authorization",
+      "Content-Type",
+      "CurrentApplication",
+      "Origin",
+      "Referer",
+      "Sec-WebSocket-Extensions",
+      "Sec-WebSocket-Key",
+      "Sec-WebSocket-Version",
+      "Upgrade"
+    ],
+    "methods_used": [
+      "GET",
+      "POST"
+    ],
+    "has_auth_headers": true,
+    "has_cookies": false,
+    "has_post_body": true
+  },
+  "chunk_info": {
+    "page": 3,
+    "total_pages": 9,
+    "sampler_range": "21–30 of 83"
+  },
+  "http_samplers": [
+    {
+      "label": "Login | 142 | GET /media/fa-solid-900-WQK4QZF6.woff2",
+      "session_id": 142,
+      "comment": "Login",
+      "http_sampler": {
+        "method": "GET",
+        "protocol": "https",
+        "server_name": "test-smoketest.zebra-next.connexus.com",
+        "port": "443",
+        "path": "/media/fa-solid-900-WQK4QZF6.woff2",
+        "query_params": {},
+        "body_format": "none",
+        "body": "",
+        "content_type": "",
+        "follow_redirects": true,
+        "keep_alive": true,
+        "use_multipart": false
+      },
+      "header_manager": {
+        "Referer": "https://test-smoketest.zebra-next.connexus.com/styles-54XCBFB7.css"
+      },
+      "cookies": {},
+      "authorization": null,
+      "assertion": {
+        "response_code": "200",
+        "response_message": "OK"
+      },
+      "think_time_ms": null
+    },
+    {
+      "label": "Login | 145 | GET /cmd/getexternaldomainrights",
+      "session_id": 145,
+      "comment": "Login",
+      "http_sampler": {
+        "method": "GET",
+        "protocol": "https",
+        "server_name": "api.zebra.connexus.com",
+        "port": "443",
+        "path": "/cmd/getexternaldomainrights",
+        "query_params": {
+          "limit": "10",
+          "domainid": "12596142",
+          "ignoreproxy": "true"
+        },
+        "body_format": "none",
+        "body": "",
+        "content_type": "",
+        "follow_redirects": true,
+        "keep_alive": true,
+        "use_multipart": false
+      },
+      "header_manager": {
+        "Authorization": "Bearer ~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88",
+        "Origin": "https://test-smoketest.zebra-next.connexus.com",
+        "Referer": "https://test-smoketest.zebra-next.connexus.com/"
+      },
+      "cookies": {},
+      "authorization": {
+        "type": "Bearer",
+        "token": "~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88"
+      },
+      "assertion": {
+        "response_code": "200",
+        "response_message": "OK"
+      },
+      "think_time_ms": null
+    },
+    {
+      "label": "Login | 146 | GET /cmd/getdomainparentlist",
+      "session_id": 146,
+      "comment": "Login",
+      "http_sampler": {
+        "method": "GET",
+        "protocol": "https",
+        "server_name": "api.zebra.connexus.com",
+        "port": "443",
+        "path": "/cmd/getdomainparentlist",
+        "query_params": {
+          "domainid": "12596144"
+        },
+        "body_format": "none",
+        "body": "",
+        "content_type": "",
+        "follow_redirects": true,
+        "keep_alive": true,
+        "use_multipart": false
+      },
+      "header_manager": {
+        "Authorization": "Bearer ~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88",
+        "Origin": "https://test-smoketest.zebra-next.connexus.com",
+        "Referer": "https://test-smoketest.zebra-next.connexus.com/"
+      },
+      "cookies": {},
+      "authorization": {
+        "type": "Bearer",
+        "token": "~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88"
+      },
+      "assertion": {
+        "response_code": "200",
+        "response_message": "OK"
+      },
+      "think_time_ms": null
+    },
+    {
+      "label": "Login | 147 | GET /cmd/getuserannouncementlist",
+      "session_id": 147,
+      "comment": "Login",
+      "http_sampler": {
+        "method": "GET",
+        "protocol": "https",
+        "server_name": "api.zebra.connexus.com",
+        "port": "443",
+        "path": "/cmd/getuserannouncementlist",
+        "query_params": {},
+        "body_format": "none",
+        "body": "",
+        "content_type": "",
+        "follow_redirects": true,
+        "keep_alive": true,
+        "use_multipart": false
+      },
+      "header_manager": {
+        "Authorization": "Bearer ~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88",
+        "Origin": "https://test-smoketest.zebra-next.connexus.com",
+        "Referer": "https://test-smoketest.zebra-next.connexus.com/"
+      },
+      "cookies": {},
+      "authorization": {
+        "type": "Bearer",
+        "token": "~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88"
+      },
+      "assertion": {
+        "response_code": "200",
+        "response_message": "OK"
+      },
+      "think_time_ms": null
+    },
+    {
+      "label": "Login | 148 | GET /cmd/listdomains",
+      "session_id": 148,
+      "comment": "Login",
+      "http_sampler": {
+        "method": "GET",
+        "protocol": "https",
+        "server_name": "api.zebra.connexus.com",
+        "port": "443",
+        "path": "/cmd/listdomains",
+        "query_params": {
+          "domainid": "12596144"
+        },
+        "body_format": "none",
+        "body": "",
+        "content_type": "",
+        "follow_redirects": true,
+        "keep_alive": true,
+        "use_multipart": false
+      },
+      "header_manager": {
+        "Authorization": "Bearer ~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88",
+        "Origin": "https://test-smoketest.zebra-next.connexus.com",
+        "Referer": "https://test-smoketest.zebra-next.connexus.com/"
+      },
+      "cookies": {},
+      "authorization": {
+        "type": "Bearer",
+        "token": "~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88"
+      },
+      "assertion": {
+        "response_code": "200",
+        "response_message": "OK"
+      },
+      "think_time_ms": null
+    },
+    {
+      "label": "Login | 149 | GET /cmd/getexternaldomainrights",
+      "session_id": 149,
+      "comment": "Login",
+      "http_sampler": {
+        "method": "GET",
+        "protocol": "https",
+        "server_name": "api.zebra.connexus.com",
+        "port": "443",
+        "path": "/cmd/getexternaldomainrights",
+        "query_params": {
+          "limit": "10",
+          "domainid": "12596144",
+          "ignoreproxy": "true"
+        },
+        "body_format": "none",
+        "body": "",
+        "content_type": "",
+        "follow_redirects": true,
+        "keep_alive": true,
+        "use_multipart": false
+      },
+      "header_manager": {
+        "Authorization": "Bearer ~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88",
+        "Origin": "https://test-smoketest.zebra-next.connexus.com",
+        "Referer": "https://test-smoketest.zebra-next.connexus.com/"
+      },
+      "cookies": {},
+      "authorization": {
+        "type": "Bearer",
+        "token": "~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88"
+      },
+      "assertion": {
+        "response_code": "200",
+        "response_message": "OK"
+      },
+      "think_time_ms": null
+    },
+    {
+      "label": "Login | 153 | GET /cmd/getexternaldomainrights",
+      "session_id": 153,
+      "comment": "Login",
+      "http_sampler": {
+        "method": "GET",
+        "protocol": "https",
+        "server_name": "api.zebra.connexus.com",
+        "port": "443",
+        "path": "/cmd/getexternaldomainrights",
+        "query_params": {
+          "limit": "10",
+          "domainid": "12596144",
+          "ignoreproxy": "true"
+        },
+        "body_format": "none",
+        "body": "",
+        "content_type": "",
+        "follow_redirects": true,
+        "keep_alive": true,
+        "use_multipart": false
+      },
+      "header_manager": {
+        "Authorization": "Bearer ~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88",
+        "Origin": "https://test-smoketest.zebra-next.connexus.com",
+        "Referer": "https://test-smoketest.zebra-next.connexus.com/"
+      },
+      "cookies": {},
+      "authorization": {
+        "type": "Bearer",
+        "token": "~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88"
+      },
+      "assertion": {
+        "response_code": "200",
+        "response_message": "OK"
+      },
+      "think_time_ms": null
+    },
+    {
+      "label": "Login | 154 | GET /Resource/12596142/public/shadow/app/buzz/secureContent…",
+      "session_id": 154,
+      "comment": "Login",
+      "http_sampler": {
+        "method": "GET",
+        "protocol": "https",
+        "server_name": "api.zebra.connexus.com",
+        "port": "443",
+        "path": "/Resource/12596142/public/shadow/app/buzz/secureContentCookieFetcher.html",
+        "query_params": {
+          "token": "~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88~bzhi1"
+        },
+        "body_format": "none",
+        "body": "",
+        "content_type": "",
+        "follow_redirects": true,
+        "keep_alive": true,
+        "use_multipart": false
+      },
+      "header_manager": {
+        "Referer": "https://test-smoketest.zebra-next.connexus.com/"
+      },
+      "cookies": {},
+      "authorization": null,
+      "assertion": {
+        "response_code": "200",
+        "response_message": "OK"
+      },
+      "think_time_ms": null
+    },
+    {
+      "label": "Login | 156 | GET /index.html",
+      "session_id": 156,
+      "comment": "Login",
+      "http_sampler": {
+        "method": "GET",
+        "protocol": "https",
+        "server_name": "testpcx-cdn-webmail.v3test.connexus.com",
+        "port": "443",
+        "path": "/index.html",
+        "query_params": {},
+        "body_format": "none",
+        "body": "",
+        "content_type": "",
+        "follow_redirects": true,
+        "keep_alive": true,
+        "use_multipart": false
+      },
+      "header_manager": {
+        "Referer": "https://test-smoketest.zebra-next.connexus.com/"
+      },
+      "cookies": {},
+      "authorization": null,
+      "assertion": {
+        "response_code": "200",
+        "response_message": "OK"
+      },
+      "think_time_ms": null
+    },
+    {
+      "label": "Login | 162 | GET /lmu/migration/contentauth/lmscontentcookiehandler.ashx",
+      "session_id": 162,
+      "comment": "Login",
+      "http_sampler": {
+        "method": "GET",
+        "protocol": "https",
+        "server_name": "testcurrent.connexus.com",
+        "port": "443",
+        "path": "/lmu/migration/contentauth/lmscontentcookiehandler.ashx",
+        "query_params": {
+          "pcxauthtoken": "~0.oIbgQC1itDs3LlxB.A.VlajFlhURYsPNphA4zxyZs_2AZBnR2xY1BeXjF7_M88~bzhi1"
+        },
+        "body_format": "none",
+        "body": "",
+        "content_type": "",
+        "follow_redirects": true,
+        "keep_alive": true,
+        "use_multipart": false
+      },
+      "header_manager": {
+        "Origin": "https://api.zebra.connexus.com",
+        "Referer": "https://api.zebra.connexus.com/"
+      },
+      "cookies": {},
+      "authorization": null,
+      "assertion": {
+        "response_code": "204",
+        "response_message": "No Content"
+      },
+      "think_time_ms": null
+    }
+  ]
+}
